@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="Parametrized test Suite" verbose="1">
+    <test name="PageObject All Tests">
+        <classes>
+            <class name="scripts.DemoblazeTests">
+                <methods>
+                    <include name="signUp"/>
+                    <include name="logIn"/>
+                    <include name="addProductToCart"/>
+                    <include name="deleteProductInCart"/>
+                    <include name="purchaseProduct"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
